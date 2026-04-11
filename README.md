@@ -1,4 +1,5 @@
-# HK Bus Fetch
+# hk-bus-fetch
+bus-fetch with javascript
 
 This project is a simple Hong Kong bus finder built with plain HTML, CSS, and JavaScript.
 
