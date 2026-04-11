@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 24px;
+    background: #d9dce2;
+    font-family: Arial, sans-serif;
+}
+
+.app-card {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 14px;
+    align-items: center;
+}
+
+.small-gap {
+    margin-top: -6px;
+}
+
+label {
+    color: #2f3d56;
+    font-size: 18px;
+}
+
+input,
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #c3c8d1;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.btn {
+    border: 0;
+    padding: 10px 14px;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-enter {
+    background: #4d60df;
+    flex: 1;
+}
+
+.btn-location {
+    background: #2c9d91;
+}
+
+.btn-reset {
+    background: #bfc3cc;
+    color: #2a3343;
+}
+
+.output-box {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid #cfd3db;
+    border-radius: 7px;
+    background: #f3f4f7;
+    line-height: 1.5;
+    color: #2f3d56;
+}
+
+.gps-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #1f7b3f;
+    font-weight: 600;
+}
+
+.gps-status svg {
+    width: 16px;
+    height: 16px;
+}
+
+.gps-active {
+    color: #1f7b3f;
+    font-weight: 600;
+}
+
+.error {
+    color: #d23333;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 740px) {
+    body {
+        padding: 10px;
+    }
+
+    .app-card {
+        padding: 18px;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .small-gap {
+        margin-top: -4px;
+    }
+
+    .button-row {
+        flex-wrap: wrap;
+    }
+
+    .btn-enter {
+        width: 100%;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Bus Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-card">
+        <h1>Bus Finder</h1>
+
+        <div class="form-area">
+            <div class="row">
+                <label for="start-point">Start Point</label>
+                <input type="text" id="start-point" list="location-suggestions" placeholder="Your Location (e.g. Choi Hung)">
+            </div>
+            <div class="row small-gap">
+                <div></div>
+                <div id="gps-status" class="gps-status hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2a1 1 0 0 1 1 1v1.06a8.002 8.002 0 0 1 6.94 6.94H21a1 1 0 1 1 0 2h-1.06a8.002 8.002 0 0 1-6.94 6.94V21a1 1 0 1 1-2 0v-1.06a8.002 8.002 0 0 1-6.94-6.94H3a1 1 0 1 1 0-2h1.06a8.002 8.002 0 0 1 6.94-6.94V3a1 1 0 0 1 1-1Zm0 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Using current location</span>
+                </div>
+            </div>
+            <div class="row">
+                <label for="bus-to-take">Bus Number</label>
+                <input type="text" id="bus-to-take" list="bus-suggestions" placeholder="Bus (e.g. 91M)">
+            </div>
+            <div class="row">
+                <label for="direction-choice">Direction</label>
+                <select id="direction-choice">
+                    <option value="auto">Auto (both directions)</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="walking-speed">Walk Speed</label>
+                <input type="number" id="walking-speed" placeholder="Speed (km/h)" value="5">
+            </div>
+            <datalist id="location-suggestions"></datalist>
+            <datalist id="bus-suggestions"></datalist>
+
+            <div class="button-row">
+                <button id="enter" class="btn btn-enter">Enter</button>
+                <button id="use-my-location" class="btn btn-location">Use My Location</button>
+                <button id="reset-all" class="btn btn-reset">Reset</button>
+            </div>
+        </div>
+
+        <div id="output-txt" class="output-box hidden">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
