@@ -43,7 +43,3 @@ The application performs complex asynchronous operations:
 - **`fetchWithTimeout`:** Ensures API requests don't hang by implementing a custom abort controller.
 - **Distance Calculation:** Uses the Haversine formula to calculate the great-circle distance between coordinates.
 - **ETA Merging:** Combines route data with stop information and live arrival times for a comprehensive commute overview.
-
----
-
-Built with 🧡 by [tototofu123](https://github.com/tototofu123)
